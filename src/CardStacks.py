@@ -183,6 +183,13 @@ class CardStack:
                 self.cards_in_play[suit].append(rank)
         return True
 
+    def add_ranks(self, ranks):
+        if type(ranks) != list:
+            raise TypeError("Ranks is not a list")
+        for rank in ranks:
+            self.add_rank(rank)
+        return True
+
 
 def get_cards_in_play(stack):
     if type(stack) != CardStack:
