@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CardStacks"
+version = "0.0.1"
+authors = [
+    { name = "SpeedyGo55", email = "SpeedyGo55@outlook.com" },
+]
+description = "A package for creating and managing card stacks."
+readme = "README.md"
+requires-python = ">=3.9.0"
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+]
+keywords = [
+    "card",
+    "stack",
+    "cardstack",
+    "cardstacks",
+    "card games",
+    "card game",
+    "cards",
+]
+
+[project.urls]
+repository = "https://github.com/SpeedyGo55/PythonCardStacks"
+documentation = "https://github.com/SpeedyGo55/PythonCardStacks"
+"Bug Tracker" = "https://github.com/SpeedyGo55/PythonCardStacks/issues"
