@@ -10,7 +10,7 @@ PythonCards is a Python library for creating playing cards and playing card stac
 ## Installation
 
 ```bash
-pip install PyCardStacks
+pip install CardStacks
 ```
 
 ## Usage

@@ -92,6 +92,55 @@ class CardStack:
             self.remove_card_from_stack(card)
         return True
 
+    def delete_suit(self, suit):
+        if type(suit) != str:
+            raise TypeError("Error: Suit is not a string")
+        if suit not in self.cards_on_stack or suit not in self.cards_in_play:
+            raise ValueError("Error: Suit is not valid")
+        del self.cards_on_stack[suit]
+        del self.cards_in_play[suit]
+        return True
+
+    def delete_suits(self, suits):
+        if type(suits) != list:
+            raise TypeError("Error: Suits is not a list")
+        for suit in suits:
+            self.delete_suit(suit)
+        return True
+
+    def delete_rank(self, rank):
+        if type(rank) != str:
+            raise TypeError("Error: Rank is not a string")
+        for suit in self.cards_on_stack:
+            if rank in self.cards_on_stack[suit]:
+                self.cards_on_stack[suit].remove(rank)
+        for suit in self.cards_in_play:
+            if rank in self.cards_in_play[suit]:
+                self.cards_in_play[suit].remove(rank)
+        return True
+
+    def add_suit(self, suit):
+        if type(suit) != str:
+            raise TypeError("Error: Suit is not a string")
+        if suit in self.cards_on_stack:
+            raise ValueError("Error: Suit is already in stack")
+        self.cards_in_play[suit] = []
+        self.cards_on_stack[suit] = []
+        return True
+
+    def add_rank(self, rank):
+        if type(rank) != str:
+            raise TypeError("Error: Rank is not a string")
+        for suit in self.cards_on_stack:
+            if rank not in self.cards_on_stack[suit]:
+                self.cards_on_stack[suit].append(rank)
+        for suit in self.cards_in_play:
+            if rank not in self.cards_in_play[suit]:
+                self.cards_in_play[suit].append(rank)
+        return True
+
+
+
 
 def get_cards_in_play(stack):
     if type(stack) != CardStack:
