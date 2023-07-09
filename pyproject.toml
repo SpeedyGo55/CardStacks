@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "CardStacks"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
     { name = "SpeedyGo55", email = "SpeedyGo55@outlook.com" },
 ]
