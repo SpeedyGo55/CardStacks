@@ -28,7 +28,7 @@ class CardStack:
     def get_cards_on_stack(self):
         return self.cards_on_stack
 
-    def get_number_of_cards_in_play(self):
+    def number_of_cards_in_play(self):
         count = 0
         for suit in self.cards_in_play:
             count += len(self.cards_in_play[suit])
@@ -53,7 +53,7 @@ class CardStack:
             output.append(tuple([suit, card]))
         return output
 
-    def put_card_back_on_stack(self, card):
+    def put_card_back(self, card):
         if type(card) != tuple:
             raise TypeError("Error: Card is not a tuple")
         if len(card) != 2:
@@ -66,11 +66,11 @@ class CardStack:
         self.cards_in_play[card[0]].remove(card[1])
         return True
 
-    def put_hand_back_on_stack(self, hand):
+    def put_hand_back(self, hand):
         if type(hand) != list:
             raise TypeError("Error: Hand is not a list")
         for card in hand:
-            self.put_card_back_on_stack(card)
+            self.put_card_back(card)
         return True
 
     def remove_card_from_stack(self, card):
