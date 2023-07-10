@@ -130,7 +130,7 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+dist-0.1.0/
 downloads/
 eggs/
 .eggs/
