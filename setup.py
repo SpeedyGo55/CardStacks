@@ -1,4 +1,9 @@
 from setuptools import setup
+from pathlib import Path
+
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="CardStacks",
@@ -16,7 +21,8 @@ setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Programming Language :: Python :: 3"
     ],
-    readme="README.md",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     keywords="cards cardstacks cardstack cardstackslib cardstackslibrary cardstackslibrarypython",
     python_requires=">=3",
     project_urls={
