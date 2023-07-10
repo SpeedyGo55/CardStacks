@@ -23,7 +23,7 @@ Stack = CardStack()
 hand = Stack.draw(5)
 print(hand)
 ```
-All the functions are documented in 
+All the functions are documented in the [Documentation](Documentation.md).
 
 
 ## Contributing

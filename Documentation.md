@@ -2,7 +2,29 @@
 # Documentation
 
 ---
- 
+
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Functions in Detail](#functions-in-detail)
+  - [CardStack](#cardstack)
+  - [CardStack.draw(amount)](#cardstackdrawamount)
+  - [CardStack.draw_stack(amount)](#cardstackdraw_stackamount)
+  - [len(CardStack)](#lencardstack)
+  - [CardStack.number_of_cards_in_play()](#cardstacknumber_of_cards_in_play)
+  - [CardStack.put_card_back(card)](#cardstackput_card_backcard)
+  - [CardStack.put_cards_back(cards)](#cardstackput_cards_backcards)
+  - [CardStack.put_hand_back(hand)](#cardstackput_hand_backhand)
+  - [CardStack.remove_card_from_stack(card)](#cardstackremove_card_from_stackcard)
+  - [CardStack.remove_cards_from_stack(cards)](#cardstackremove_cards_from_stackcards)
+  - [CardStack.delete_suit(suit)](#cardstackdelete_suitsuit)
+  - [CardStack.delete_rank(rank)](#cardstackdelete_rankrank)
+  - [CardStack.delete_suits(suits)](#cardstackdelete_suitssuits)
+  - [CardStack.delete_ranks(ranks)](#cardstackdelete_ranksranks)
+  - [CardStack.add_suit(suit)](#cardstackadd_suitsuit)
+  - [CardStack.add_rank(rank)](#cardstackadd_rankrank)
+  - [CardStack.add_suits(suits)](#cardstackadd_suitssuits)
+  - [CardStack.add_ranks(ranks)](#cardstack_add_ranksranks)
 
 ## Introduction
 
