@@ -24,7 +24,11 @@
   - [CardStack.add_suit(suit)](#cardstackadd_suitsuit)
   - [CardStack.add_rank(rank)](#cardstackadd_rankrank)
   - [CardStack.add_suits(suits)](#cardstackadd_suitssuits)
-  - [CardStack.add_ranks(ranks)](#cardstack_add_ranksranks)
+  - [CardStack.add_ranks(ranks)](#cardstackadd_ranksranks)
+  - [CardStack.get_cards_in_play()](#cardstackget_cards_in_play)
+  - [CardStack.get_cards_on_stack()](#cardstackget_cards_on_stack)
+  - [get_cards_in_play(CardStack)](#get_cards_in_playcardstack)
+  - [get_cards_on_stack(CardStack)](#get_cards_on_stackcardstack)
 
 ## Introduction
 
