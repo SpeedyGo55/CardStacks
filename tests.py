@@ -42,7 +42,7 @@ def test_cardstack_draw():
 def test_cardstack_len():
     stack = CardStack()
     assert len(stack) == 52, "Stack length is not 52"
-    stack.draw(4)
+    stack.draw(5)
     assert len(stack) == 47, "Stack length is not 47"
     rand = random.randint(1, 10)
     stack.draw(rand)
