@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="CardStacks",
-    version="0.1.2",
+    version="0.1.3",
     description="A simple library for creating and manipulating stacks of cards.",
     url="https://github.com/SpeedyGo55/CardStacks",
     author="SpeedyGo55",
