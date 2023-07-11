@@ -87,7 +87,6 @@ class CardStack:
             output[suit] = []
         for i in range(size):
             suit = random.choice(list(self.cards_on_stack.keys()))
-            print(suit)
             while True:
                 if len(self.cards_on_stack[suit]) == 0:
                     suit = random.choice(list(self.cards_on_stack.keys()))
