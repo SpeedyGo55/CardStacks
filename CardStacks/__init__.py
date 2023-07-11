@@ -1,7 +1,8 @@
 import random
 
-__version__ = "0.4.0"
+__version__ = "0.1.3"
 __author__ = "SpeedyGo55"
+
 
 class CardStack:
     def __init__(self, suits=None, ranks=None):
